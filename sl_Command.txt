@@ -1,0 +1,73 @@
+
+To continuously run the sl command on Ubuntu, you can use a loop in the terminal. The sl command displays a train animation in the terminal. Here's how you can run it continuously:
+
+Open a terminal window on your Ubuntu system.
+Use the following command to run sl continuously in a loop:
+bash
+Copy code
+while true; do sl; done
+This command runs sl repeatedly in an infinite loop. Each time sl finishes running, it starts again.
+
+Here's how you can stop it:
+
+Press Ctrl + C on your keyboard to terminate the loop and stop sl from running.
+Here's an example:
+
+bash
+Copy code
+while true; do sl; done
+When you run this command in the terminal, the train animation (sl) will continuously run until you stop the loop.
+
+------------------------------------------------------------------------------------------------------------------------------------------
+TLDR
+Let a steam locomotive run through your terminal
+
+$ sl
+copy
+
+
+The train burns, people scream
+$ sl -a
+copy
+
+
+Let the train fly
+$ sl -F
+copy
+
+
+Make the train little
+$ sl -l
+copy
+
+
+Let the user exit (CTRL + C)
+$ sl -e
+copy
+
+SYNOPSIS
+sl [ -alFe ]
+
+DESCRIPTION
+sl Displays animations aimed to correct users who accidentally enter sl instead of ls. SL stands for Steam Locomotive.
+
+OPTIONS
+-a
+An accident seems to happen. You'll feel pity for people who cry for help.
+
+-l
+shows little one.
+
+-F
+It flies.
+
+-e
+Allow interrupt by Ctrl+C.
+
+BUGS
+It rarely shows contents of current directory.
+
+SEE ALSO
+ls(1)
+
+AUTHOR
